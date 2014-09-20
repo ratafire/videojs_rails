@@ -298,10 +298,11 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.59);
   cursor: pointer;
 }
 .vjs-default-skin .vjs-play-control:before {
-  content: "\e001"; /* Play Icon */
+  content: url(/assets/videojs_play.png);
 }
 .vjs-default-skin.vjs-playing .vjs-play-control:before {
-  content: "\e002"; /* Pause Icon */
+  content: url(/assets/videojs_pause.png);
+  margin-top: 4px;
 }
 
 /* Rewind
@@ -319,19 +320,23 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.59);
 }
 .vjs-default-skin .vjs-mute-control:before,
 .vjs-default-skin .vjs-volume-menu-button:before {
-  content: "\e006"; /* Full volume */
+  content: url(/assets/videojs_volume.png);
+  margin-top: 3px;
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
-  content: "\e003"; /* No volume */
+  content: url(/assets/videojs_volume_low.png);
+  margin-top: 3px;
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-1:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before {
-  content: "\e004"; /* Half volume */
+  content: url(/assets/videojs_volume_mid.png);
+  margin-top: 3px;
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-2:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before {
-  content: "\e005"; /* Full volume */
+  content: url(/assets/videojs_volume.png);
+  margin-top: 3px;
 }
 
 .vjs-default-skin .vjs-volume-control {
@@ -489,12 +494,14 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.59);
   font-size: 1em;
   /* Align vertically by making the line height the same as the control bar */
   line-height: 3em;
+  margin-top: 1px;
+  color: #999;
 }
 .vjs-default-skin .vjs-current-time { float: left; }
 .vjs-default-skin .vjs-duration { float: left; }
 /* Remaining time is in the HTML, but not included in default design */
 .vjs-default-skin .vjs-remaining-time { display: none; float: left; }
-.vjs-time-divider { float: left; line-height: 3em; }
+.vjs-time-divider { float: left; line-height: 3em; display: none;}
 
 /* Fullscreen
 -------------------------------------------------------------------------------- */
@@ -504,10 +511,12 @@ box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.59);
   float: right;
 }
 .vjs-default-skin .vjs-fullscreen-control:before {
-  content: "\e000"; /* Enter full screen */
+  content: url(/assets/videojs_enlarge.png);
+  margin-top: 4px;
 }
 .vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
-  content: "\e00b"; /* Exit full screen */
+  content: url(/assets/videojs_smaller.png);
+  margin-top: 4px;
 }
 
 /* Big Play Button (at start)
