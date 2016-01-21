@@ -16,7 +16,8 @@ REQUIRED STYLES (be careful overriding)
 .video-js {
   background-color: #000;
   position: relative;
-  padding: 0;
+  padding-top: 56.25%;
+  /* padding: 0; */
   /* Start with 10px for base font size so other dimensions can be em based and easily calculable. */
   font-size: 10px;
   /* Allow poster to be vertially aligned. */
@@ -54,6 +55,7 @@ body.vjs-full-window {
   overflow-y: auto; /* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html */
 }
 .video-js.vjs-fullscreen {
+  padding-top:0px;
   position: fixed;
   overflow: hidden;
   z-index: 1000;
